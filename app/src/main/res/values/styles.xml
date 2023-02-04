@@ -1,0 +1,130 @@
+<resources>
+
+    <style name="AppTextNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_size_normal</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="AppTextBig">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_size_big</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="AppTextLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_size_large</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="AppTextLarge.ExpandedTitle" parent="AppTextLarge">
+        <item name="android:textColor">@color/color_on_primary</item>
+        <item name="android:gravity">start</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTextBig.CollapsedTitle" parent="AppTextBig">
+        <item name="android:gravity">start</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTextNormal.BaseTextView" parent="AppTextNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTextBig.TextView" parent="AppTextBig">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTextNormal.ItemTextView" parent="AppTextNormal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTextBig.ItemTextView" parent="AppTextBig">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AppTextNormal.ItemEditText" parent="AppTextNormal">
+        <item name="android:textColorHint">@color/color_label_secondary</item>
+    </style>
+
+    <style name="AppTextNormal.TextViewButton" parent="AppTextNormal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/app_indent_normal</item>
+        <item name="android:paddingTop">@dimen/app_indent_normal</item>
+        <item name="android:paddingStart">@dimen/app_indent_big</item>
+        <item name="android:paddingEnd">@dimen/app_indent_big</item>
+        <item name="android:background">@drawable/text_view_button_background</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <style name="DetailsCollapsingToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="DetailsCollapsingToolbar.BaseButton">
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="BaseTabSearchToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:background">@color/color_primary</item>
+    </style>
+
+    <style name="BaseTabSearchToolbar.Text" parent="BaseTabSearchToolbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/app_text_size_normal</item>
+        <item name="android:textColor">@color/color_on_primary</item>
+    </style>
+
+    <style name="BaseTabSearchToolbar.Button">
+        <item name="android:layout_width">?attr/actionBarSize</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@drawable/toolbar_button_background</item>
+    </style>
+
+    <style name="BaseTabSearchToolbar.Text.EditTextSearch" parent="BaseTabSearchToolbar.Text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColorHint">@color/color_label_secondary</item>
+    </style>
+
+    <style name="BaseTabSearchToolbar.Text.TextView" parent="BaseTabSearchToolbar.Text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/color_label_secondary</item>
+    </style>
+
+    <style name="PopupMenuItem" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textAppearance">@style/AppTextNormal</item>
+    </style>
+</resources>

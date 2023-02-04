@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.redmechax00.astonintensivecourseproject.presentation.customviews.tripletablayout.items.TabItemView
+            android:id="@+id/triple_tab_view_first_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="0"
+            android:text="@string/text_tab_characters"
+            app:tab_item_icon_normal="@drawable/ic_characters_normal"
+            app:tab_item_icon_selected="@drawable/ic_characters_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/triple_tab_view_second_item"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.redmechax00.astonintensivecourseproject.presentation.customviews.tripletablayout.items.TabItemView
+            android:id="@+id/triple_tab_view_second_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:text="@string/text_tab_locations"
+            app:tab_item_icon_normal="@drawable/ic_locations_normal"
+            app:tab_item_icon_selected="@drawable/ic_locations_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/triple_tab_view_third_item"
+            app:layout_constraintStart_toEndOf="@id/triple_tab_view_first_item" />
+
+        <com.redmechax00.astonintensivecourseproject.presentation.customviews.tripletablayout.items.TabItemView
+            android:id="@+id/triple_tab_view_third_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tag="2"
+            android:text="@string/text_tab_episodes"
+            app:tab_item_icon_normal="@drawable/ic_episodes_normal"
+            app:tab_item_icon_selected="@drawable/ic_episodes_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/triple_tab_view_second_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

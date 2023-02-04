@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_menu_filter_status_item_none"
+        android:title="@string/filter_status_item_none" />
+    <item
+        android:id="@+id/popup_menu_filter_status_item_alive"
+        android:title="@string/filter_status_item_alive" />
+    <item
+        android:id="@+id/popup_menu_filter_status_item_dead"
+        android:title="@string/filter_status_item_dead" />
+    <item
+        android:id="@+id/popup_menu_filter_status_item_unknown"
+        android:title="@string/filter_status_item_unknown" />
+</menu>

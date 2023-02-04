@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/character_details_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".presentation.screens.mainscreen.details.character.CharacterDetailsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/character_details_app_bar_layout"
+        style="@style/DetailsCollapsingToolbar"
+        android:layout_height="@dimen/character_details_collapsing_toolbar_height"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/character_details_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/color_primary_overlay"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/character_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:contentDescription="@string/item_image_desc"
+                android:scaleType="fitCenter"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/character_details_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <ImageButton
+                    android:id="@+id/character_details_toolbar_btn_back"
+                    style="@style/DetailsCollapsingToolbar.BaseButton"
+                    android:layout_marginStart="@dimen/app_indent_normal"
+                    android:contentDescription="@string/item_image_desc"
+                    android:src="@drawable/ic_back_to_stack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.redmechax00.astonintensivecourseproject.presentation.customviews.textviewoutline.TextViewOutline
+                android:id="@+id/character_details_collapsing_toolbar_title"
+                style="@style/AppTextLarge.ExpandedTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/app_indent_large"
+                android:layout_marginEnd="@dimen/app_indent_large"
+                android:layout_marginBottom="@dimen/app_indent_large"
+                android:textColor="@color/color_on_primary_stroke"
+                app:layout_collapseMode="pin"
+                app:maxLines="3"
+                app:outline_color="@color/color_on_primary"
+                app:outline_width="4" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/details_scroll_view_background"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_indent_normal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:id="@+id/character_details_info_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/app_indent_big"
+                    android:layout_marginTop="@dimen/app_indent_big"
+                    android:layout_marginEnd="@dimen/app_indent_big"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_width="wrap_content"
+                        android:text="@string/text_item_species"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/character_details_species"
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginStart="@dimen/app_indent_big"
+                        android:layout_marginEnd="@dimen/app_indent_normal"
+                        android:maxLines="3" />
+
+                    <ImageView
+                        android:id="@+id/character_details_info_image"
+                        android:layout_width="@dimen/character_details_info_image_size"
+                        android:layout_height="@dimen/character_details_info_image_size"
+                        android:layout_rowSpan="3"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:layout_marginEnd="@dimen/app_indent_normal"
+                        android:contentDescription="@string/item_image_desc"
+                        android:src="@drawable/ic_info" />
+
+                    <TextView
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:text="@string/text_item_status"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/character_details_status"
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginStart="@dimen/app_indent_big"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:layout_marginEnd="@dimen/app_indent_normal"
+                        android:maxLines="3" />
+
+                    <TextView
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:text="@string/text_item_gender"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/character_details_gender"
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginStart="@dimen/app_indent_big"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:layout_marginEnd="@dimen/app_indent_normal"
+                        android:maxLines="3" />
+
+                    <TextView
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:text="@string/text_item_type"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/character_details_type"
+                        style="@style/AppTextNormal.ItemTextView"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_marginStart="@dimen/app_indent_big"
+                        android:layout_marginTop="@dimen/app_indent_normal"
+                        android:layout_marginEnd="@dimen/app_indent_normal"
+                        android:maxLines="3" />
+
+                </GridLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/character_details_origin"
+                style="@style/AppTextBig.TextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_big"
+                android:text="@string/text_title_origin" />
+
+            <TextView
+                android:id="@+id/character_details_origin_name"
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/app_indent_big"
+                android:layout_marginTop="@dimen/app_indent_normal"
+                android:layout_marginEnd="@dimen/app_indent_big"
+                android:gravity="center"
+                android:maxLines="3" />
+
+            <TextView
+                android:id="@+id/character_details_location"
+                style="@style/AppTextBig.TextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_big"
+                android:text="@string/text_title_location" />
+
+            <TextView
+                android:id="@+id/character_details_location_name"
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/app_indent_big"
+                android:layout_marginTop="@dimen/app_indent_normal"
+                android:layout_marginEnd="@dimen/app_indent_big"
+                android:gravity="center"
+                android:maxLines="3" />
+
+            <TextView
+                android:id="@+id/character_details_episodes"
+                style="@style/AppTextBig.TextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_big"
+                android:text="@string/text_title_episodes" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/character_details_recycler_view_episodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_indent_normal"
+                android:layout_marginTop="@dimen/app_indent_normal"
+                android:layout_marginEnd="@dimen/app_indent_normal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

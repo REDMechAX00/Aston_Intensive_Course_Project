@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Back-->
+    <color name="color_primary">@color/color_beige</color>
+    <color name="color_primary_overlay">@color/color_white</color>
+    <color name="color_secondary">@color/color_blue</color>
+
+    <!--Back variant-->
+    <color name="color_primary_variant">@color/color_primary_overlay</color>
+    <color name="color_secondary_variant">@color/color_blue</color>
+
+    <!--Label-->
+    <color name="color_on_primary">@color/color_label_primary</color>
+    <color name="color_on_primary_stroke">@color/color_label_primary_stroke</color>
+    <color name="color_on_secondary">@color/color_black</color>
+
+    <!--Main Label varieties-->
+    <color name="color_label_primary">#FF000000</color>
+    <color name="color_label_primary_stroke">#FFFFFF</color>
+    <color name="color_label_secondary">#99000000</color>
+
+    <!--Support-->
+    <color name="separator">#33000000</color>
+    <color name="color_ripple">#33000000</color>
+
+    <!--TabView-->
+    <color name="color_tab_normal">#00FFFFFF</color>
+    <color name="color_tab_selected">#66007AFF</color>
+
+    <!--Toolbar-->
+    <color name="color_toolbar_searching">#1A007AFF</color>
+
+    <!--Button-->
+    <color name="color_button_background">#26007AFF</color>
+
+    <!--Network Status View-->
+    <color name="color_network_status_connect">@color/color_green</color>
+    <color name="color_network_status_lost">@color/color_red</color>
+
+    <!--Common Colors-->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_beige">#F1EFE7</color>
+    <color name="color_beige_in_dark">#161618</color>
+    <color name="color_dark_gray">#252528</color>
+    <color name="color_blue">#007AFF</color>
+    <color name="color_green">#4CAF50</color>
+    <color name="color_red">#FF3838</color>
+</resources>

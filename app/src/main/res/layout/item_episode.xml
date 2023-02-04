@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_ripple_background"
+    android:orientation="vertical"
+    android:padding="@dimen/app_indent_normal">
+
+    <TextView
+        android:id="@+id/item_episode_name"
+        style="@style/AppTextBig.ItemTextView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:maxLines="3"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/item_episode_first_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/item_episode_second_column"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_normal"
+                android:text="@string/text_item_episode"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_normal"
+                android:text="@string/text_item_release_date"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_episode_second_column"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/app_indent_normal_increased"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_episode_first_column"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/item_episode_number"
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_normal" />
+
+            <TextView
+                android:id="@+id/item_episode_release_date"
+                style="@style/AppTextNormal.ItemTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_normal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

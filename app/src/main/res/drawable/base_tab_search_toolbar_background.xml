@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/base_tab_search_toolbar_searching_background"
+        android:top="@dimen/app_indent_normal"
+        android:bottom="@dimen/app_indent_normal">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/color_toolbar_searching" />
+            <corners android:radius="@dimen/app_rounded_items_radius" />
+        </shape>
+    </item>
+</layer-list>

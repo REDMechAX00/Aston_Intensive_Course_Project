@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="@color/color_primary_overlay" />
+    <corners android:topRightRadius="@dimen/character_details_scroll_view_background_corners_radius" />
+
+</shape>

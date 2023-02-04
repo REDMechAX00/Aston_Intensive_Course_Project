@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aston Intensive Course Project</string>
+
+    <string name="text_connection_restored">Подключение восстановлено</string>
+    <string name="text_connection_is_lost">Нет интернета - оффлайн режим</string>
+
+    <string name="tab_item_view_image_desc">Иконка вкладки</string>
+
+    <string name="text_tab_characters">Персонажи</string>
+    <string name="text_tab_locations">Локации</string>
+    <string name="text_tab_episodes">Эпизоды</string>
+
+    <string name="item_image_desc">Картинка</string>
+
+    <string name="text_search_hint">Поиск</string>
+    <string name="text_start_search">Начать поиск</string>
+
+    <string name="common_tab_search_toolbar_btn_cancel_desc">Отмена поиска</string>
+    <string name="common_tab_search_toolbar_btn_clear_desc">Очистить поиск</string>
+    <string name="common_tab_search_toolbar_btn_search_desc">Поиск</string>
+    <string name="common_tab_search_toolbar_btn_filter_desc">Фильтры</string>
+
+    <string name="filter_gender_item_none">Не выбрано</string>
+    <string name="filter_status_item_none">Не выбрано</string>
+    <string name="filter_season_item_none">Не выбрано</string>
+    <string name="filter_episode_item_none">Не выбрано</string>
+
+    <string name="text_btn_retry">Повторить</string>
+    <string name="text_btn_go_offline">Оффлайн данные</string>
+    <string name="text_error_loading">Ошибка при загрузке</string>
+
+    <string name="text_filter">Фильтр</string>
+    <string name="text_apply">Применить</string>
+    <string name="text_reset">Сбросить</string>
+    <string name="text_item_status">Статус:</string>
+    <string name="text_item_species">Облик:</string>
+    <string name="text_item_type">Тип:</string>
+    <string name="text_item_gender">Пол:</string>
+    <string name="text_item_name">Имя:</string>
+    <string name="text_item_episode_name">Название:</string>
+    <string name="text_item_dimension">Измерение:</string>
+    <string name="text_item_season">Сезон:</string>
+    <string name="text_item_episode">"Серия":</string>
+    <string name="text_item_release_date">Дата релиза:</string>
+    <string name="text_item_air_date">Дата выхода:</string>
+
+    <string name="text_title_origin">Происхождение</string>
+    <string name="text_title_location">Локация</string>
+    <string name="text_title_episodes">Эпизоды</string>
+    <string name="text_title_residents">Обитатели</string>
+    <string name="text_title_characters">Персонажи</string>
+
+    <string name="locations_tab_bottom_sheet_edit_text_hint_name">Имя локации (in English)</string>
+    <string name="locations_tab_bottom_sheet_edit_text_hint_type">Тип локации (in English)</string>
+    <string name="locations_tab_bottom_sheet_edit_text_hint_dimension">Измерение (нахождение) локации</string>
+    <string name="episodes_tab_bottom_sheet_edit_text_hint_name">Имя эпизода</string>
+    <string name="episodes_tab_bottom_sheet_edit_text_hint_episode">Код эпизода</string>
+</resources>

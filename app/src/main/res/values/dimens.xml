@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_indent_normal">8dp</dimen>
+    <dimen name="app_indent_normal_increased">12dp</dimen>
+    <dimen name="app_indent_big">16dp</dimen>
+    <dimen name="app_indent_large">32dp</dimen>
+
+    <dimen name="app_elevation">8dp</dimen>
+    <dimen name="app_separator_height">1dp</dimen>
+    <dimen name="app_text_view_button_height">30dp</dimen>
+    <dimen name="app_rounded_items_radius">42dp</dimen>
+
+    <dimen name="app_text_size_large">34sp</dimen>
+    <dimen name="app_text_size_big">22sp</dimen>
+    <dimen name="app_text_size_normal">17sp</dimen>
+
+    <dimen name="item_progress_size">48dp</dimen>
+    <dimen name="item_error_btn_min_width">130dp</dimen>
+
+    <dimen name="toolbar_button_ripple_radius">20dp</dimen>
+
+    <dimen name="tab_item_view_selector_height">32dp</dimen>
+    <dimen name="tab_item_view_selector_width">68dp</dimen>
+    <dimen name="tab_item_view_height">76dp</dimen>
+    <dimen name="tab_item_view_padding">8dp</dimen>
+    <dimen name="tab_item_view_icon_size">24dp</dimen>
+
+    <dimen name="details_item_icon_size">50dp</dimen>
+
+    <dimen name="item_character_image_size">120dp</dimen>
+
+    <dimen name="bottom_sheet_filter_item_min_height">48dp</dimen>
+
+    <dimen name="character_details_scroll_view_background_corners_radius">70dp</dimen>
+    <dimen name="character_details_info_image_size">70dp</dimen>
+    <dimen name="character_details_collapsing_toolbar_height">280dp</dimen>
+
+    <dimen name="location_details_collapsing_toolbar_height">180dp</dimen>
+    <dimen name="location_details_expanded_title_margin_bottom">84dp</dimen>
+
+    <dimen name="episode_details_collapsing_toolbar_height">180dp</dimen>
+</resources>

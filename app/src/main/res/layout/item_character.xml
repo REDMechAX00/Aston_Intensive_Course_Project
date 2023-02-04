@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/rectangle_ripple_background"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_character_image"
+        android:layout_width="@dimen/item_character_image_size"
+        android:layout_height="@dimen/item_character_image_size"
+        android:layout_margin="@dimen/app_indent_normal"
+        android:contentDescription="@string/item_image_desc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/app_indent_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/item_character_image"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_character_name"
+            style="@style/AppTextNormal.ItemTextView"
+            app:layout_constraintBottom_toTopOf="@id/item_character_species"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <TextView
+            android:id="@+id/item_character_species"
+            style="@style/AppTextNormal.ItemTextView"
+            app:layout_constraintBottom_toTopOf="@id/item_character_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_character_name" />
+
+        <TextView
+            android:id="@+id/item_character_status"
+            style="@style/AppTextNormal.ItemTextView"
+            app:layout_constraintBottom_toTopOf="@id/item_character_gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_character_species" />
+
+        <TextView
+            android:id="@+id/item_character_gender"
+            style="@style/AppTextNormal.ItemTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_character_status" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

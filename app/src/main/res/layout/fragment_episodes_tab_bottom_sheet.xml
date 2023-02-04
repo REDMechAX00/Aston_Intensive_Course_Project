@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/app_indent_big">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTextBig"
+            android:layout_gravity="center"
+            android:text="@string/text_filter"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_separator_height"
+            android:layout_marginTop="@dimen/app_indent_big"
+            android:layout_marginBottom="@dimen/app_indent_normal"
+            android:background="@color/separator" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/AppTextNormal.ItemTextView"
+            android:layout_width="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/text_item_season"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_episodes_tab_bottom_sheet_season_text"
+            style="@style/AppTextNormal.ItemTextView"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="@dimen/app_indent_normal_increased"
+            android:layout_marginEnd="@dimen/app_indent_normal"
+            android:background="@drawable/rectangle_ripple_background"
+            android:gravity="start|center"
+            android:minHeight="@dimen/bottom_sheet_filter_item_min_height" />
+
+        <TextView
+            style="@style/AppTextNormal.ItemTextView"
+            android:layout_width="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/text_item_episode"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_episodes_tab_bottom_sheet_series_text"
+            style="@style/AppTextNormal.ItemTextView"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginStart="@dimen/app_indent_normal_increased"
+            android:layout_marginEnd="@dimen/app_indent_normal"
+            android:background="@drawable/rectangle_ripple_background"
+            android:gravity="start|center"
+            android:minHeight="@dimen/bottom_sheet_filter_item_min_height" />
+
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_episodes_tab_bottom_sheet_btn_reset"
+            style="@style/AppTextNormal.TextViewButton"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/app_indent_big"
+            android:layout_marginEnd="@dimen/app_indent_normal"
+            android:text="@string/text_reset"
+            app:layout_constraintEnd_toStartOf="@+id/fragment_episodes_tab_bottom_sheet_btn_apply"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_episodes_tab_bottom_sheet_btn_apply"
+            style="@style/AppTextNormal.TextViewButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/app_indent_normal"
+            android:layout_marginTop="@dimen/app_indent_big"
+            android:text="@string/text_apply"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fragment_episodes_tab_bottom_sheet_btn_reset"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

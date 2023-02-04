@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TabItemView">
+        <attr name="android:text" format="string" />
+        <attr name="android:textSize" format="dimension" />
+        <attr name="tab_item_icon_normal" format="integer" />
+        <attr name="tab_item_icon_selected" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewOutline">
+        <attr name="outline_color" format="integer" />
+        <attr name="outline_width" format="float" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_menu_filter_season_item_none"
+        android:title="@string/filter_season_item_none" />
+
+    <item
+        android:id="@+id/popup_menu_filter_season_item_s01"
+        android:title="@string/filter_season_item_s01" />
+
+    <item
+        android:id="@+id/popup_menu_filter_season_item_s02"
+        android:title="@string/filter_season_item_s02" />
+
+    <item
+        android:id="@+id/popup_menu_filter_season_item_s03"
+        android:title="@string/filter_season_item_s03" />
+
+    <item
+        android:id="@+id/popup_menu_filter_season_item_s04"
+        android:title="@string/filter_season_item_s04" />
+
+    <item
+        android:id="@+id/popup_menu_filter_season_item_s05"
+        android:title="@string/filter_season_item_s05" />
+</menu>

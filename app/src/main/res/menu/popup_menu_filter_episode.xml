@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_none"
+        android:title="@string/filter_episode_item_none" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e01"
+        android:title="@string/filter_episode_item_e01" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e02"
+        android:title="@string/filter_episode_item_e02" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e03"
+        android:title="@string/filter_episode_item_e03" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e04"
+        android:title="@string/filter_episode_item_e04" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e05"
+        android:title="@string/filter_episode_item_e05" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e06"
+        android:title="@string/filter_episode_item_e06" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e07"
+        android:title="@string/filter_episode_item_e07" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e08"
+        android:title="@string/filter_episode_item_e08" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e09"
+        android:title="@string/filter_episode_item_e09" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e10"
+        android:title="@string/filter_episode_item_e10" />
+
+    <item
+        android:id="@+id/popup_menu_filter_episode_item_e11"
+        android:title="@string/filter_episode_item_e11" />
+
+</menu>

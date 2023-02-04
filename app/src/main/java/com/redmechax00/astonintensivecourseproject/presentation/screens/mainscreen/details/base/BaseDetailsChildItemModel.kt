@@ -1,0 +1,3 @@
+package com.redmechax00.astonintensivecourseproject.presentation.screens.mainscreen.details.base
+
+interface BaseDetailsChildItemModel

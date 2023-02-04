@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_details_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".presentation.screens.mainscreen.details.location.LocationDetailsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/episode_details_app_bar_layout"
+        style="@style/DetailsCollapsingToolbar"
+        android:layout_height="@dimen/episode_details_collapsing_toolbar_height"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/episode_details_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/AppTextBig.CollapsedTitle"
+            app:contentScrim="@color/color_primary_overlay"
+            app:expandedTitleTextAppearance="@style/AppTextLarge.ExpandedTitle"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:maxLines="3"
+            app:titleEnabled="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/episode_details_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <ImageButton
+                    android:id="@+id/episode_details_toolbar_btn_back"
+                    style="@style/DetailsCollapsingToolbar.BaseButton"
+                    android:layout_marginStart="@dimen/app_indent_normal"
+                    android:contentDescription="@string/item_image_desc"
+                    android:src="@drawable/ic_back_to_stack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/details_scroll_view_background"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_indent_normal"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/episode_details_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_indent_big"
+                android:layout_marginTop="@dimen/app_indent_big"
+                android:layout_marginEnd="@dimen/app_indent_big"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/AppTextNormal.ItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_item_air_date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/episode_details_collapsing_toolbar_air_date"
+                    style="@style/AppTextNormal.ItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginStart="@dimen/app_indent_big"
+                    android:layout_marginEnd="@dimen/app_indent_big"
+                    app:maxLines="3" />
+
+                <TextView
+                    style="@style/AppTextNormal.ItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/app_indent_normal"
+                    android:text="@string/text_item_episode"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/episode_details_collapsing_toolbar_episode"
+                    style="@style/AppTextNormal.ItemTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginStart="@dimen/app_indent_big"
+                    android:layout_marginTop="@dimen/app_indent_normal"
+                    android:layout_marginEnd="@dimen/app_indent_big"
+                    app:maxLines="3" />
+
+            </GridLayout>
+
+            <TextView
+                style="@style/AppTextBig.TextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/app_indent_big"
+                android:paddingStart="@dimen/app_indent_large"
+                android:paddingEnd="@dimen/app_indent_large"
+                android:text="@string/text_title_characters" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/episode_details_recycler_view_characters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_indent_normal"
+                android:layout_marginEnd="@dimen/app_indent_normal" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
